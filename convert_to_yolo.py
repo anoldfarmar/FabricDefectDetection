@@ -9,6 +9,7 @@ Output layout:
     labels/val/*.txt
     dataset.yaml
 """
+
 from __future__ import annotations
 
 import json
@@ -18,7 +19,6 @@ import shutil
 import struct
 from collections import defaultdict
 from pathlib import Path
-
 
 BASE_DIR = Path(__file__).resolve().parent
 DEFECT_DIR = BASE_DIR / "defect_Images"
