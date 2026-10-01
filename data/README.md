@@ -7,14 +7,15 @@
 ## 文件夹目录结构
 
 a) 我们将提供用于训练的图像数据和识别标签，文件夹结构：
-* defect Images
-* normal Images
-* Annotations
-* README.md
-b) defect Images : 存放有瑕疵的图像数据
-c) normal Images : 存放无疵点的图像数据，jpeg编码图像文件。
-d) Annotations : 存放属性标签标注数据。
-e) README.md : 对数据的详细介绍。
+
+- defect Images
+- normal Images
+- Annotations
+- README.md
+  b) defect Images : 存放有瑕疵的图像数据
+  c) normal Images : 存放无疵点的图像数据，jpeg编码图像文件。
+  d) Annotations : 存放属性标签标注数据。
+  e) README.md : 对数据的详细介绍。
 
 ## 标注格式说明
 
@@ -83,9 +84,9 @@ e) README.md : 对数据的详细介绍。
 | ----------- | ------ | ------ | ------ | ------ | ---- | ---- | ---- | ------ | ---- | ---- |
 | category id | 17     | 18     | 18     | 18     | 19   | 19   | 19   | 19     | 20   | 20   |
 
-| 类别名      | 双维 | 双经 | 跳纱 | 筘路 | 纬纱不良 |      |      |      |      |      |
-| ----------- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- |
-| category id | 20   | 20   | 20   | 20   | 20       |      |      |      |      |      |
+| 类别名      | 双维 | 双经 | 跳纱 | 筘路 | 纬纱不良 |     |     |     |     |     |
+| ----------- | ---- | ---- | ---- | ---- | -------- | --- | --- | --- | --- | --- |
+| category id | 20   | 20   | 20   | 20   | 20       |     |     |     |     |     |
 
 # 2.结果文件格式
 
@@ -139,7 +140,7 @@ with open('result.json', 'w') as fp:
      json.dump(result, fp, indent=4, separators=(',', ': '))
 ```
 
-## 
+##
 
 ```
 OMP_NUM_THREADS=1 python convert_to_rknn_int8.py \
@@ -161,8 +162,7 @@ channels:
   - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
   - https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
   - https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/
-ssl_verify: false 
-show_channel_urls: True 
+ssl_verify: false
+show_channel_urls: True
 EOF
 ```
-
